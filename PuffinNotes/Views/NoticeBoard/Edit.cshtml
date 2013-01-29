@@ -12,6 +12,8 @@
     <fieldset>
         <legend>NoticeBoard</legend>
 
+        @Html.HiddenFor(model => model.boardId)
+
         <div class="editor-label">
             @Html.LabelFor(model => model.name)
         </div>
@@ -35,8 +37,6 @@
             @Html.EditorFor(model => model.owner)
             @Html.ValidationMessageFor(model => model.owner)
         </div>
-
-        @Html.HiddenFor(model => model.iD)
 
         <p>
             <input type="submit" value="Save" />

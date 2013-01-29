@@ -1,0 +1,55 @@
+﻿@model PuffinNotes.Models.Note
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Note</legend>
+
+        @Html.HiddenFor(model => model.boardID)
+
+        @Html.HiddenFor(model => model.noteID)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.content)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.content)
+            @Html.ValidationMessageFor(model => model.content)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.placementCoordinates)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.placementCoordinates)
+            @Html.ValidationMessageFor(model => model.placementCoordinates)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.author)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.author)
+            @Html.ValidationMessageFor(model => model.author)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
