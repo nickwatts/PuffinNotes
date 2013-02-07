@@ -39,14 +39,17 @@ namespace PuffinNotes.Controllers
 
         public ActionResult Create()
         {
+
+            ViewBag.NoticeBoardIDs = db.NoticeBoards.Select(r => r.boardId);
             return View();
+
         }
 
         //
         // POST: /Note/Create
 
         [HttpPost]
-        public ActionResult Create(Note note)
+        public ActionResult Create([Bind(Exclude = "noteID")]Note note)
         {
             if (ModelState.IsValid)
             {

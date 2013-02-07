@@ -34,6 +34,8 @@ namespace PuffinNotes.Controllers
             return View(noticeboard);
         }
 
+     
+
         //
         // GET: /NoticeBoard/Create
 
