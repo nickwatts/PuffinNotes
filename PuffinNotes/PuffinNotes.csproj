@@ -147,6 +147,10 @@
     <Compile Include="Migrations\201301291920065_Changed Nothing.Designer.cs">
       <DependentUpon>201301291920065_Changed Nothing.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201301291938488_Made noteID the pk for Note model.cs" />
+    <Compile Include="Migrations\201301291938488_Made noteID the pk for Note model.Designer.cs">
+      <DependentUpon>201301291938488_Made noteID the pk for Note model.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Note.cs" />
     <Compile Include="Models\NoticeBoard.cs" />
@@ -218,6 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201301291920065_Changed Nothing.resx">
       <DependentUpon>201301291920065_Changed Nothing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201301291938488_Made noteID the pk for Note model.resx">
+      <DependentUpon>201301291938488_Made noteID the pk for Note model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

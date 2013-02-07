@@ -9,8 +9,8 @@ namespace PuffinNotes.Models
 {
     public class Note
     {
-      [Key] public int boardID { get; set; }
-      public int noteID { get; set; }
+      [Key] public int noteID { get; set; }
+      public int boardID { get; set; }
       public string content { get; set; }
       public int placementCoordinates { get; set; }
       public string author { get; set; }
