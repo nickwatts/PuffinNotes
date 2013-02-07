@@ -143,6 +143,10 @@
     <Compile Include="Migrations\201302071832118_add note list to noticeboard.Designer.cs">
       <DependentUpon>201302071832118_add note list to noticeboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201302071836515_InitialSchema.cs" />
+    <Compile Include="Migrations\201302071836515_InitialSchema.Designer.cs">
+      <DependentUpon>201302071836515_InitialSchema.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Note.cs" />
     <Compile Include="Models\NoticeBoard.cs" />
@@ -211,6 +215,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201302071832118_add note list to noticeboard.resx">
       <DependentUpon>201302071832118_add note list to noticeboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201302071836515_InitialSchema.resx">
+      <DependentUpon>201302071836515_InitialSchema.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
