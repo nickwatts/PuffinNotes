@@ -9,6 +9,20 @@
 <fieldset>
     <legend>Note</legend>
 
+    <div class="editor-label">
+        @Html.LabelFor(model => model.noteID)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.noteID)
+    </div>
+    
+    <div class="editor-label">
+        @Html.LabelFor(model => model.boardID)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.boardID)
+    </div>  
+
     <div class="display-label">
          @Html.DisplayNameFor(model => model.content)
     </div>

@@ -13,6 +13,22 @@
         <legend>Note</legend>
 
         <div class="editor-label">
+            @Html.LabelFor(model => model.noteID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.noteID)
+            @Html.ValidationMessageFor(model => model.noteID)
+        </div>
+        
+        <div class="editor-label">
+            @Html.LabelFor(model => model.boardID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.boardID)
+            @Html.ValidationMessageFor(model => model.boardID)
+        </div>
+        
+        </div><div class="editor-label">
             @Html.LabelFor(model => model.content)
         </div>
         <div class="editor-field">
