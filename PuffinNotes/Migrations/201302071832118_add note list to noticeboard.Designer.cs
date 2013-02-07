@@ -5,13 +5,13 @@ namespace PuffinNotes.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    public sealed partial class AddedNotemodelandchangedNoticeBoardmodeltouseboardIdaspk : IMigrationMetadata
+    public sealed partial class addnotelisttonoticeboard : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddedNotemodelandchangedNoticeBoardmodeltouseboardIdaspk));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(addnotelisttonoticeboard));
         
         string IMigrationMetadata.Id
         {
-            get { return "201301291852416_Added Note model and changed NoticeBoard model to use boardId as pk"; }
+            get { return "201302071832118_add note list to noticeboard"; }
         }
         
         string IMigrationMetadata.Source

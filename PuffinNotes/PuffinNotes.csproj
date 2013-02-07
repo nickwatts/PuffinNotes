@@ -139,17 +139,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201301291852416_Added Note model and changed NoticeBoard model to use boardId as pk.cs" />
-    <Compile Include="Migrations\201301291852416_Added Note model and changed NoticeBoard model to use boardId as pk.Designer.cs">
-      <DependentUpon>201301291852416_Added Note model and changed NoticeBoard model to use boardId as pk.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201301291920065_Changed Nothing.cs" />
-    <Compile Include="Migrations\201301291920065_Changed Nothing.Designer.cs">
-      <DependentUpon>201301291920065_Changed Nothing.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201301291938488_Made noteID the pk for Note model.cs" />
-    <Compile Include="Migrations\201301291938488_Made noteID the pk for Note model.Designer.cs">
-      <DependentUpon>201301291938488_Made noteID the pk for Note model.cs</DependentUpon>
+    <Compile Include="Migrations\201302071832118_add note list to noticeboard.cs" />
+    <Compile Include="Migrations\201302071832118_add note list to noticeboard.Designer.cs">
+      <DependentUpon>201302071832118_add note list to noticeboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Note.cs" />
@@ -217,14 +209,8 @@
     <None Include="_bin_deployableAssemblies\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201301291852416_Added Note model and changed NoticeBoard model to use boardId as pk.resx">
-      <DependentUpon>201301291852416_Added Note model and changed NoticeBoard model to use boardId as pk.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201301291920065_Changed Nothing.resx">
-      <DependentUpon>201301291920065_Changed Nothing.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201301291938488_Made noteID the pk for Note model.resx">
-      <DependentUpon>201301291938488_Made noteID the pk for Note model.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201302071832118_add note list to noticeboard.resx">
+      <DependentUpon>201302071832118_add note list to noticeboard.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -13,7 +13,7 @@ namespace PuffinNotes.Models
         public string name { get; set; }
         public string description { get; set; }
         public string owner { get; set; }
-        
+        public List<Note> notes { get; set; }    
     }
 
     public class NoticeBoardDBContext : DbContext
