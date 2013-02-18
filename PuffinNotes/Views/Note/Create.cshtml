@@ -20,13 +20,13 @@
             @Html.DropDownListFor(model => model.boardID, new SelectList(ViewBag.NoticeBoardIDs))
         </div>
 
-        <div class="editor-label">
+@*        <div class="editor-label">
             @Html.LabelFor(model => model.noteID)
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.noteID)
             @Html.ValidationMessageFor(model => model.noteID)
-        </div>
+        </div>*@
         
         <div class="editor-label">
             @Html.LabelFor(model => model.content)
