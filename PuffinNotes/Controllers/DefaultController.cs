@@ -13,6 +13,7 @@ namespace PuffinNotes.Controllers
 
         public ActionResult index()
         {
+            ViewBag.title = "Home";  
             return View();
         }
 

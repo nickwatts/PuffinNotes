@@ -53,6 +53,7 @@ namespace PuffinNotes.Controllers
         {
             if (ModelState.IsValid)
             {
+                ViewBag.title = "Create Note";
                 db.Notes.Add(note);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -66,6 +67,7 @@ namespace PuffinNotes.Controllers
 
         public ActionResult Edit(int id = 0)
         {
+            ViewBag.title = "Edit Note"; 
             Note note = db.Notes.Find(id);
             if (note == null)
             {
@@ -82,6 +84,7 @@ namespace PuffinNotes.Controllers
         {
             if (ModelState.IsValid)
             {
+                ViewBag.title = "Edit Note";
                 db.Entry(note).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -94,6 +97,7 @@ namespace PuffinNotes.Controllers
 
         public ActionResult Delete(int id = 0)
         {
+            ViewBag.title = "Delete Note"; 
             Note note = db.Notes.Find(id);
             if (note == null)
             {
@@ -108,6 +112,7 @@ namespace PuffinNotes.Controllers
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {
+            ViewBag.title = "Delete Note";
             Note note = db.Notes.Find(id);
             db.Notes.Remove(note);
             db.SaveChanges();

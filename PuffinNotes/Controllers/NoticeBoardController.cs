@@ -18,6 +18,7 @@ namespace PuffinNotes.Controllers
 
         public ActionResult Index()
         {
+            ViewBag.title = "List Noticeboards";
             return View(db.NoticeBoards.ToList());
         }
 
@@ -26,6 +27,7 @@ namespace PuffinNotes.Controllers
 
         public ActionResult Details(int id = 0)
         {
+            ViewBag.title = "Noticeboard Details"; 
             NoticeBoard noticeboard = db.NoticeBoards.Find(id);
             if (noticeboard == null)
             {
@@ -41,6 +43,7 @@ namespace PuffinNotes.Controllers
 
         public ActionResult Create()
         {
+            ViewBag.title = "Create Noticeboard";
             return View();
         }
 
@@ -52,6 +55,7 @@ namespace PuffinNotes.Controllers
         {
             if (ModelState.IsValid)
             {
+                ViewBag.title = "Create Noticeboard";
                 db.NoticeBoards.Add(noticeboard);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -65,6 +69,7 @@ namespace PuffinNotes.Controllers
 
         public ActionResult Edit(int id = 0)
         {
+            ViewBag.title = "Edit Noticeboard"; 
             NoticeBoard noticeboard = db.NoticeBoards.Find(id);
             if (noticeboard == null)
             {
@@ -81,6 +86,7 @@ namespace PuffinNotes.Controllers
         {
             if (ModelState.IsValid)
             {
+                ViewBag.title = "Edit Noticeboard";
                 db.Entry(noticeboard).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -93,6 +99,7 @@ namespace PuffinNotes.Controllers
 
         public ActionResult Delete(int id = 0)
         {
+            ViewBag.title = "Delete Noticeboard";
             NoticeBoard noticeboard = db.NoticeBoards.Find(id);
             if (noticeboard == null)
             {
@@ -107,6 +114,7 @@ namespace PuffinNotes.Controllers
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {
+            ViewBag.title = "Delete Noticeboard";
             NoticeBoard noticeboard = db.NoticeBoards.Find(id);
             db.NoticeBoards.Remove(noticeboard);
             db.SaveChanges();

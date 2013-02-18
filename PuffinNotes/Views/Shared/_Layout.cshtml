@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div id="title">
+              <h1>Puffin Notes</h1>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li>@Html.ActionLink("List Noticeboards", "Index", "NoticeBoard")</li>
+                    <li>@Html.ActionLink("Create a Noticeboard", "Create", "NoticeBoard")</li>
+                    <li>@Html.ActionLink("List Notes", "Index", "Note")</li>
+                    <li>@Html.ActionLink("Create a Note", "Create", "Note")</li>
+                </ul>
+            </nav>
+        </header>
+        <section id="main">
+            @RenderBody()
+        </section>
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>
