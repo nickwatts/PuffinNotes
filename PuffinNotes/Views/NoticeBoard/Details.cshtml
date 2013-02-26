@@ -24,10 +24,16 @@
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.owner)
+         @Html.DisplayNameFor(model => model.notes)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.owner)
+      
+
+           @foreach (PuffinNotes.Models.Note thenote in Model.notes)
+    { 
+        <div>@Html.DisplayFor(model => thenote.content)</div>
+    }
+            
     </div>
 </fieldset>
 <p>
