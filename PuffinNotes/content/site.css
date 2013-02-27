@@ -1,0 +1,42 @@
+﻿body
+{
+
+  font-family: Rockwell, Consolas, 'Courier New', monospace;
+}
+
+
+#logo
+{
+  display:inline-block;
+  vertical-align: middle;
+}
+
+#title
+{
+  display: inline-block;
+  vertical-align: middle;
+  color: #808080;
+}
+
+
+ul#topmenu li
+{
+  display: inline-block;
+  width: 200px;
+  border: solid;
+  border-width: thin;
+  border-radius: 5px;
+  text-align: center;
+  padding: 3px;
+}
+
+ul#topmenu
+{
+  -webkit-padding-start: 0px;
+}
+
+.note
+{
+
+
+}

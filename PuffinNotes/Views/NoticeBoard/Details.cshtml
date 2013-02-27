@@ -4,30 +4,10 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
-
 <fieldset>
-    <legend>NoticeBoard</legend>
+    <legend>@Html.DisplayFor(model => model.name): @Html.DisplayFor(model => model.description)</legend>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.name)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.name)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.description)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.description)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.notes)
-    </div>
-    <div class="display-field">
-      
+    <div class="note">
 
            @foreach (PuffinNotes.Models.Note thenote in Model.notes)
     { 
