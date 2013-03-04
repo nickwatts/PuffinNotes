@@ -161,6 +161,7 @@
     <Content Include="content\puffin-logo.png" />
     <Content Include="content\site.css" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\AddJqueryUIControls.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

@@ -7,11 +7,11 @@
 <fieldset>
     <legend>@Html.DisplayFor(model => model.name): @Html.DisplayFor(model => model.description)</legend>
 
-    <div class="note">
+    <div class="NoticeBoard">
 
            @foreach (PuffinNotes.Models.Note thenote in Model.notes)
     { 
-        <div>@Html.DisplayFor(model => thenote.content)</div>
+        <div class="ui-widget-content DraggableListItem">@Html.DisplayFor(model => thenote.content)</div>
     }
             
     </div>
