@@ -92,6 +92,19 @@ namespace PuffinNotes.Controllers
             return View(note);
         }
 
+
+        [HttpPost]
+        public ActionResult EditPosition(Note note)
+        {
+            if (ModelState.IsValid)
+            {
+                ViewBag.title = "Edit Note";
+                db.Entry(note).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(note);
+        }
         //
         // GET: /Note/Delete/5
 

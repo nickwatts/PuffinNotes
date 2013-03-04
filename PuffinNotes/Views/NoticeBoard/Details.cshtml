@@ -12,8 +12,8 @@
     @foreach (PuffinNotes.Models.Note thenote in Model.notes)
     { 
         <div class="note" id="@Html.DisplayFor(model => thenote.noteID)"
-            style="position:absolute; left:@Html.DisplayFor(model => thenote.xCoordinate)px; top:@Html.DisplayFor(model => thenote.xCoordinate)px"
-            onmouseup="setlocation(@Html.DisplayFor(model => thenote.noteID))"
+            style="position:absolute; left:@Html.DisplayFor(model => thenote.xCoordinate)px; top:@Html.DisplayFor(model => thenote.yCoordinate)px"
+            onmouseup="setlocation(@Html.DisplayFor(model => thenote.noteID), @Html.DisplayFor(model => thenote.xCoordinate), @Html.DisplayFor(model => thenote.yCoordinate))"
             >@Html.DisplayFor(model => thenote.content)</div>
         
         
