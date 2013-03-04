@@ -12,7 +12,9 @@ namespace PuffinNotes.Models
       [Key] public int noteID { get; set; }
       public int boardID { get; set; }
       public string content { get; set; }
-      public int placementCoordinates { get; set; }
+      public int xCoordinate { get; set; }
+      public int yCoordinate { get; set; }
+      public int zCoordinate { get; set; }
       public string author { get; set; }
     }
 

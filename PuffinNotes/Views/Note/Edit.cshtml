@@ -41,11 +41,25 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.placementCoordinates)
+            @Html.LabelFor(model => model.xCoordinate)
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.placementCoordinates)
-            @Html.ValidationMessageFor(model => model.placementCoordinates)
+            @Html.EditorFor(model => model.xCoordinate)
+            @Html.ValidationMessageFor(model => model.xCoordinate)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.yCoordinate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.yCoordinate)
+            @Html.ValidationMessageFor(model => model.yCoordinate)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.zCoordinate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.zCoordinate)
+            @Html.ValidationMessageFor(model => model.zCoordinate)
         </div>
 
         <div class="editor-label">

@@ -5,13 +5,13 @@ namespace PuffinNotes.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    public sealed partial class InitialSchema : IMigrationMetadata
+    public sealed partial class InitialMigratin : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialSchema));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialMigratin));
         
         string IMigrationMetadata.Id
         {
-            get { return "201302071836515_InitialSchema"; }
+            get { return "201303041844342_InitialMigratin"; }
         }
         
         string IMigrationMetadata.Source

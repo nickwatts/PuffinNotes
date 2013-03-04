@@ -37,6 +37,19 @@ ul#topmenu
 
 .note
 {
+    width : 150px;
+    height : 150px;
+    background-color: #FFFF66;
+    font-family: cursive;
+}
 
-
+.noticeboard
+{
+    width : 700px;
+    height : 700px;
+    border: solid;
+    border-width: thin;
+    border-radius: 5px;
+    text-align: center;
+    padding: 3px;
 }

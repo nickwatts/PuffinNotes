@@ -13,7 +13,7 @@ namespace PuffinNotes.Migrations
         }
 
         protected override void Seed(PuffinNotes.Models.NoticeBoardDBContext context)
-        {
+        { 
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method FK_dbo.Notes_dbo.NoticeBoards_boardID

@@ -7,11 +7,16 @@
 <fieldset>
     <legend>@Html.DisplayFor(model => model.name): @Html.DisplayFor(model => model.description)</legend>
 
-    <div class="NoticeBoard">
+    <div class="noticeboard">
 
-           @foreach (PuffinNotes.Models.Note thenote in Model.notes)
+    @foreach (PuffinNotes.Models.Note thenote in Model.notes)
     { 
-        <div class="ui-widget-content DraggableListItem">@Html.DisplayFor(model => thenote.content)</div>
+        <div class="note" id="@Html.DisplayFor(model => thenote.noteID)"
+            style="position:absolute; left:@Html.DisplayFor(model => thenote.xCoordinate)px; top:@Html.DisplayFor(model => thenote.xCoordinate)px"
+            onmouseup="setlocation(@Html.DisplayFor(model => thenote.noteID))"
+            >@Html.DisplayFor(model => thenote.content)</div>
+        
+        
     }
             
     </div>
