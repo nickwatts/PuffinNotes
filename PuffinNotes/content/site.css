@@ -41,6 +41,9 @@ ul#topmenu
     height : 150px;
     background-color: #FFFF66;
     font-family: cursive;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
 }
 
 .noticeboard

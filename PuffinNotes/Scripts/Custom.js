@@ -2,7 +2,7 @@
 { 
     var note = document.getElementById(id);
     //alert("left = " + note.offsetLeft + " top = " + note.offsetTop);
-    alert("at function");
+    //alert("at function");
     var xCoordinate = note.offsetLeft;
     var yCoordinate = note.offsetTop;
     var zCoordinate = note.offsetTop;
